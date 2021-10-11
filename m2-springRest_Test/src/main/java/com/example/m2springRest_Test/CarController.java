@@ -1,8 +1,6 @@
 package com.example.m2springRest_Test;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,5 +51,10 @@ List<Car> coche= new ArrayList<Car>(); ;
         coche.add(ford);
 
 return coche;
+}
+@PostMapping("/coche")
+public void save(@RequestBody Car coche){
+    System.out.println("el fabricante es "+coche.getFabricante()+" modelo  "+coche.getModel());
+
 }
 }
