@@ -67,8 +67,11 @@ public void update(@RequestBody Car coche){
     System.out.println("Id recibido "+ id);
 }
 
-}
+
 @DeleteMapping("/coche")
-public void deleteAll(){)
+public void deleteAll(){
+    System.out.println("Todos los coches borrados!");
+    //borra todos los registros de la tabla car en base de datos
+}
 }
 
