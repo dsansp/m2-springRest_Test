@@ -57,4 +57,18 @@ public void save(@RequestBody Car coche){
     System.out.println("el fabricante es "+coche.getFabricante()+" modelo  "+coche.getModel());
 
 }
+@PutMapping("/coche")
+public void update(@RequestBody Car coche){
+    System.out.println("el fabricante es "+coche.getFabricante()+" modelo  "+coche.getModel());
+
 }
+@DeleteMapping("/coche/{id}")
+    public void deleteById(@PathVariable Long id) {
+    System.out.println("Id recibido "+ id);
+}
+
+}
+@DeleteMapping("/coche")
+public void deleteAll(){)
+}
+
